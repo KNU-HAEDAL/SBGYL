@@ -20,7 +20,10 @@ public class Post {
     private String p_content;
     private Date p_date;
     private String file_uuid;
+    @JoinColumn(name="m_id", referencedColumnName = "m_id")
     private Long m_id;
+
+    @JoinColumn(name="uid", referencedColumnName = "uid")
     private Long uid;
 
     public Post(String p_name, String p_content, Date p_date,String file_uuid, Long m_id, Long uid) {

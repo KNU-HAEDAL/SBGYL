@@ -1,10 +1,9 @@
 package com.example.haedal_hackaton.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.NoArgsConstructor;
+import org.antlr.v4.runtime.misc.NotNull;
+import org.hibernate.annotations.ColumnDefault;
 
 import java.util.Date;
 
@@ -12,15 +11,18 @@ import java.util.Date;
 @Entity
 public class Mission {
     @Id
-    @GeneratedValue()
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long m_id;
 
+    @NotNull
     @Column(length = 50, nullable = false)
     private String m_name;
 
+    @NotNull
     @Column(length = 1000, nullable = false)
     private String m_content;
 
+    @NotNull
     @Column
     private Date startDate;
 
