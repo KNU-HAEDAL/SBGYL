@@ -22,7 +22,7 @@ public class PostResponseDto {
         this.p_content = entity.getP_content();
         this.p_date = entity.getP_date();
         this.file_uuid = entity.getFile_uuid();
-        this.m_id = entity.getM_id();
+        this.m_id = entity.getMid();
         this.uid = entity.getUid();
     }
 }

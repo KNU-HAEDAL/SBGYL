@@ -28,6 +28,6 @@ public class PostService {
     }
 
     public List<Post> findByMissionId(Long missionId) {
-        return postRepository.findAllByM_id(missionId);
+        return postRepository.findAllByMid(missionId);
     }
 }

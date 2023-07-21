@@ -9,6 +9,7 @@ import java.util.Date;
 @Getter
 @NoArgsConstructor
 @Entity
+@IdClass(Participant.class)
 public class Participant {
     @Id
     @JoinColumn(name="uid", referencedColumnName = "uid")

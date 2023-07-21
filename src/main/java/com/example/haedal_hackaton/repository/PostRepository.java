@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface PostRepository extends JpaRepository<Post,Long> {
 
-    List<Post> findAllByM_id(Long m_id);
+    List<Post> findAllByMid(Long mid);
 
 }

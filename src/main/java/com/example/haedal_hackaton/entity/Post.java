@@ -26,7 +26,7 @@ public class Post {
     //미션 id
     @Column
     @JoinColumn(name="m_id", referencedColumnName = "m_id")
-    private Long m_id;
+    private Long mid;
     //유저 id
     @Column
     @JoinColumn(name="uid", referencedColumnName = "uid")
@@ -37,7 +37,7 @@ public class Post {
         this.p_content = p_content;
         this.p_date = p_date;
         this.file_uuid=file_uuid;
-        this.m_id = m_id;
+        this.mid = m_id;
         this.uid = uid;
     }
 
