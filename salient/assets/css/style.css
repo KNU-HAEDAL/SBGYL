@@ -197,7 +197,9 @@ p {
   padding-right: 30px;
 }
 
+/* 수정했어요 */
 .sep-section {
+  margin-top: 15%;
   height: 1px;
   border-bottom: 1px solid #EAEAEA;
 }
