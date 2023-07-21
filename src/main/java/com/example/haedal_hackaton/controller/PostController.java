@@ -28,7 +28,7 @@ public class PostController {
         //1. 데이터를 DTO로 받기  (DTO의 필드연결은 프론트가)
 
         //2. DTO to Entity (DTO의 함수)
-        ;
+
         //3. Entity to DB (repository의 CRUD함수)
 
 //        이 과정을 그~대로~ Service에 옮겨놓고, Service함수를 리턴해주면 됨!

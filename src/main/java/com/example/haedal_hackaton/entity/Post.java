@@ -18,11 +18,15 @@ public class Post {
     private String p_name;
     @Column(length = 1000, columnDefinition = "TEXT", nullable = false)
     private String p_content;
+    @Column
     private Date p_date;
+    @Column
     private String file_uuid;
+
+    @Column
     @JoinColumn(name="m_id", referencedColumnName = "m_id")
     private Long m_id;
-
+    @Column
     @JoinColumn(name="uid", referencedColumnName = "uid")
     private Long uid;
 
