@@ -1,10 +1,11 @@
 package com.example.haedal_hackaton.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
-
+@Getter
 @NoArgsConstructor
 @Entity
 public class Mission {
