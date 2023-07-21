@@ -1,0 +1,49 @@
+/* 미션 누르면 뜨는 창들에 다 적용하는 CSS */
+
+
+
+a.Join-mission{
+    font-family: 'Noto Sans KR', sans-serif;
+    
+    color: black;
+    line-height: 5rem;
+    margin-left: 5rem;
+    font-size: 2rem;
+}
+
+section.all{
+    width: 100%;
+    height: 100%;
+}
+
+h1.mission-c{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 3rem;
+    margin-left: 3%;
+
+}
+
+h2.mission-title{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 7rem;
+    margin-left: 8%;
+}
+
+h3.mission-leader{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-left: 8%;
+}
+
+h4.mission-info{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-left: 8%;
+}
+
+button.join-button{
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 10%;
+    display: flex;
+    background-color: #E69E79;
+    border-radius: 10px;
+}
