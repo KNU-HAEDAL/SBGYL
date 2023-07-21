@@ -8,6 +8,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Optional;
+
 @RequiredArgsConstructor
 @Service
 public class MissionService {
@@ -17,7 +19,8 @@ public class MissionService {
     public MissionResponseDto findById (Long id){
         Mission entity = missionRepository.findById(id)
                 .orElseThrow(()-> new
-                        IllegalArgumentException("해당 게시글이 없습니다. id="+id));
+                        IllegalArgumentException("해당 미션이 없습니다. id="+id));
         return new MissionResponseDto(entity);
     }
+
 }

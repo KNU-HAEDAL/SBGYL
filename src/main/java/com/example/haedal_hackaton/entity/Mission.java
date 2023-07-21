@@ -36,4 +36,12 @@ public class Mission {
         this.startDate = startDate;
         this.endDate = endDate;
     }
+
+    public Mission(Long m_id, String m_name, String m_content, Date startDate, Date endDate) {
+        this.m_id = m_id;
+        this.m_name = m_name;
+        this.m_content = m_content;
+        this.startDate = startDate;
+        this.endDate = endDate;
+    }
 }
