@@ -4,9 +4,13 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-public class User {
+public class Participant {
     @Id
     private Long uid;
-    private String u_name;
+
+    @Id
+    private Long m_id;
+
+    private boolean post;
 
 }
