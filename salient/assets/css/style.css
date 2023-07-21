@@ -3178,6 +3178,10 @@ p.copyright {
     margin-bottom: 20px;
   }
 
+  .portfolio-desc .col-sm-6 {
+    text-align: center;
+  }
+
   .portfolio-rel figure {
     margin-bottom: 20px;
   }
