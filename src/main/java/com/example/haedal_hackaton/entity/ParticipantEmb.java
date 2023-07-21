@@ -7,5 +7,5 @@ import java.io.Serializable;
 @Data
 public class ParticipantEmb implements Serializable {
     private Long uid;
-    private Long m_id;
+    private Long mid;
 }

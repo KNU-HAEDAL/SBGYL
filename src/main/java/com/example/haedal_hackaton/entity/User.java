@@ -10,6 +10,6 @@ public class User {
     @Id
     private Long uid;
     @NotNull
-    private String u_name;
+    private String uname;
 
 }

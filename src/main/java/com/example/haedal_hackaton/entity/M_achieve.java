@@ -10,13 +10,13 @@ import java.util.Date;
 @Entity
 public class M_achieve {
     @Id
-    private Long m_achieve;
+    private Long machieve;
     @NotNull
     private Date date;
     @JoinColumn(name="uid", referencedColumnName = "uid")
     private Long uid;
 
     @JoinColumn(name="m_id", referencedColumnName = "m_id")
-    private Long m_id;
+    private Long mid;
 
 }

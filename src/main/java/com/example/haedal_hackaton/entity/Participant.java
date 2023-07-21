@@ -17,14 +17,14 @@ public class Participant {
 
     @Id
     @JoinColumn(name = "m_id", referencedColumnName = "m_id")
-    private Long m_id;
+    private Long mid;
 
     @Column
     private boolean post;
 
     public Participant(Long uid, Long m_id, boolean post) {
         this.uid = uid;
-        this.m_id = m_id;
+        this.mid = m_id;
         this.post = post;
     }
 }

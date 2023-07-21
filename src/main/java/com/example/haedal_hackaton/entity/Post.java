@@ -12,16 +12,16 @@ import java.util.Date;
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long p_idx;
+    private Long pidx;
 
     @Column(length = 50, nullable = false)
-    private String p_name;
+    private String pname;
     @Column(length = 1000, columnDefinition = "TEXT", nullable = false)
-    private String p_content;
+    private String pcontent;
     @Column
-    private Date p_date;
+    private Date pdate;
     @Column
-    private String file_uuid;
+    private String fileuuid;
 
     //미션 id
     @Column
@@ -33,10 +33,10 @@ public class Post {
     private Long uid;
 
     public Post(String p_name, String p_content, Date p_date,String file_uuid, Long m_id, Long uid) {
-        this.p_name = p_name;
-        this.p_content = p_content;
-        this.p_date = p_date;
-        this.file_uuid=file_uuid;
+        this.pname = p_name;
+        this.pcontent = p_content;
+        this.pdate = p_date;
+        this.fileuuid=file_uuid;
         this.mid = m_id;
         this.uid = uid;
     }

@@ -39,15 +39,15 @@ public class PostController {
 
     //인증글 목록 조회
     //인증글 전부를 던져주면 됨
-    @GetMapping("/api/mission/{mission-id}/post")
+    @GetMapping("/api/mission/{mission_id}/post")
     public List<Post> findByMissionId(@PathVariable Long mission_id){
         return postService.findByMissionId(mission_id);
     }
 
 
     //인증글 특정 조회, 미완
-    @GetMapping("/api/mission/{mission-id}/post/{post-id}")
-    public PostResponseDto findByPostId(@PathVariable Long missionId,@PathVariable Long postId){
+    @GetMapping("/api/mission/{missionId}/post/{postId}")
+    public PostResponseDto findByPostId(@PathVariable Long missionId, @PathVariable Long postId){
         return postService.findById(postId);
     }
 }

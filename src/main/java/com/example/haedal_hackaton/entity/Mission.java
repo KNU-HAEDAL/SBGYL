@@ -13,15 +13,15 @@ import java.util.Date;
 public class Mission {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long m_id;
+    private Long mid;
 
     @NotNull
     @Column(length = 50, nullable = false)
-    private String m_name;
+    private String mname;
 
     @NotNull
     @Column(length = 1000, nullable = false)
-    private String m_content;
+    private String mcontent;
 
     @NotNull
     @Column
@@ -31,16 +31,16 @@ public class Mission {
     private Date endDate;
 
     public Mission(String m_name, String m_content, Date startDate, Date endDate) {
-        this.m_name = m_name;
-        this.m_content = m_content;
+        this.mname = m_name;
+        this.mcontent = m_content;
         this.startDate = startDate;
         this.endDate = endDate;
     }
 
     public Mission(Long m_id, String m_name, String m_content, Date startDate, Date endDate) {
-        this.m_id = m_id;
-        this.m_name = m_name;
-        this.m_content = m_content;
+        this.mid = m_id;
+        this.mname = m_name;
+        this.mcontent = m_content;
         this.startDate = startDate;
         this.endDate = endDate;
     }

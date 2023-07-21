@@ -5,12 +5,12 @@ import lombok.Getter;
 
 @Getter
 public class ParticipantResponseDto {
-    private Long m_id;
+    private Long mid;
     private Long uid;
     private boolean post;
 
     public ParticipantResponseDto(Participant entity) {
-        this.m_id = entity.getM_id();
+        this.mid = entity.getMid();
         this.uid = entity.getUid();
         this.post = entity.isPost();
     }

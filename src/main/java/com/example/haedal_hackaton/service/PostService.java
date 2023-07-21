@@ -16,7 +16,7 @@ public class PostService {
     private final PostRepository postRepository;
     @Transactional
     public Long save(PostSaveRequestDto requestDto){
-        return postRepository.save(requestDto.toEntity()).getP_idx();
+        return postRepository.save(requestDto.toEntity()).getPidx();
     }
 
     @Transactional
@@ -30,4 +30,5 @@ public class PostService {
     public List<Post> findByMissionId(Long missionId) {
         return postRepository.findAllByMid(missionId);
     }
+
 }

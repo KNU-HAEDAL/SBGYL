@@ -10,17 +10,17 @@ import lombok.Getter;
 import java.util.Date;
 @Getter
 public class MissionResponseDto {
-    private Long m_id;
+    private Long mid;
 
-    private String m_name;
-    private String m_content;
+    private String mname;
+    private String mcontent;
     private Date startDate;
     private Date endDate;
 
     public MissionResponseDto(Mission entity) {
-        this.m_id = entity.getM_id();
-        this.m_name = entity.getM_name();
-        this.m_content = entity.getM_content();
+        this.mid = entity.getMid();
+        this.mname = entity.getMname();
+        this.mcontent = entity.getMcontent();
         this.startDate = entity.getStartDate();
         this.endDate = entity.getEndDate();
     }
