@@ -26,7 +26,7 @@ public class PostSaveRequestDto {
         this.uid = uid;
     }
     //m_id 없는 용도
-    public PostSaveRequestDto(String p_name, String p_content, String file_uuid, Date p_date, Long uid) {
+    public PostSaveRequestDto(String p_name, String p_content,  Date p_date,String file_uuid, Long uid) {
         this.p_name = p_name;
         this.p_content = p_content;
         this.file_uuid = file_uuid;

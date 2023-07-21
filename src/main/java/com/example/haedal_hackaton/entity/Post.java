@@ -18,9 +18,13 @@ public class Post {
     private String p_name;
     @Column(length = 1000, columnDefinition = "TEXT", nullable = false)
     private String p_content;
+    @Column
     private Date p_date;
+    @Column
     private String file_uuid;
+    @Column
     private Long m_id;
+    @Column
     private Long uid;
 
     public Post(String p_name, String p_content, Date p_date,String file_uuid, Long m_id, Long uid) {
