@@ -23,9 +23,11 @@ public class Post {
     @Column
     private String file_uuid;
 
+    //미션 id
     @Column
     @JoinColumn(name="m_id", referencedColumnName = "m_id")
     private Long m_id;
+    //유저 id
     @Column
     @JoinColumn(name="uid", referencedColumnName = "uid")
     private Long uid;

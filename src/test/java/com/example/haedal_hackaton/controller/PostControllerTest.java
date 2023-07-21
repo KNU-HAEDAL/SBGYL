@@ -51,7 +51,7 @@ public class PostControllerTest {
         ResponseEntity<Long> responseEntity = restTemplate
                 .postForEntity(url,requestDto,Long.class);
 
-        //then
+//        then
         assertThat(responseEntity.getStatusCode())
                 .isEqualTo(HttpStatus.OK);
         assertThat(responseEntity.getBody())
@@ -60,5 +60,7 @@ public class PostControllerTest {
         assertThat(all.get(0).getP_name()).isEqualTo(p_name);
         assertThat(all.get(0).getP_content()).isEqualTo(p_content);
     }
+
+
 
 }

@@ -13,6 +13,7 @@ public class MissionController {
 
     @GetMapping("/api/mission/{mission-id}")
     public MissionResponseDto findById(@PathVariable Long id) {
+
         return missionService.findById(id);
     }
 }

@@ -15,6 +15,7 @@ public class MissionService {
 
     @Transactional
     public MissionResponseDto findById (Long id){
+
         Mission entity = missionRepository.findById(id)
                 .orElseThrow(()-> new
                         IllegalArgumentException("해당 게시글이 없습니다. id="+id));
