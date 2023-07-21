@@ -1,13 +1,13 @@
 package com.example.haedal_hackaton.controller;
 
 import com.example.haedal_hackaton.dto.PostSaveRequestDto;
+import com.example.haedal_hackaton.entity.Post;
 import com.example.haedal_hackaton.repository.PostRepository;
 import com.example.haedal_hackaton.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 public class PostController {
@@ -33,5 +33,10 @@ public class PostController {
 
 //        이 과정을 그~대로~ Service에 옮겨놓고, Service함수를 리턴해주면 됨!
         return postService.save(dto);
+    }
+
+    @GetMapping("/api/mission/{mission_id}/post")
+    public List<Post> allPost(){
+        return postService.findAllPost();
     }
 }

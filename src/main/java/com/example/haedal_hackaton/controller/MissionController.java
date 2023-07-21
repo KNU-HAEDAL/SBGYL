@@ -23,10 +23,10 @@ public class MissionController {
         return missionService.findById(id);
     }
 
-    @GetMapping("/api/mission/{uid}/my-mission")
-    public List<Mission> findByUserId(@PathVariable Long uid) {
+    //@GetMapping("/api/mission/{uid}/my-mission")
+    //public List<Mission> findByUserId(@PathVariable Long uid) {
         //ParticipantResponseDto participantResponseDto;
-        List<Participant> participant = participantService.findByUid(uid);
-        return missionService.findById(participantResponseDto.getM_id());
-    }
+    //    List<Participant> participant = participantService.findByUid(uid);
+    //    return missionService.findById(participantResponseDto.getM_id());
+    //}
 }
