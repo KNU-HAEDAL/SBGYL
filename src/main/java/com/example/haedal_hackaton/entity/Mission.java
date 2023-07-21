@@ -3,6 +3,8 @@ package com.example.haedal_hackaton.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.antlr.v4.runtime.misc.NotNull;
+import org.hibernate.annotations.ColumnDefault;
 
 import java.util.Date;
 @Getter
@@ -13,12 +15,15 @@ public class Mission {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long m_id;
 
+    @NotNull
     @Column(length = 50, nullable = false)
     private String m_name;
 
+    @NotNull
     @Column(length = 1000, nullable = false)
     private String m_content;
 
+    @NotNull
     @Column
     private Date startDate;
 

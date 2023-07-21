@@ -22,9 +22,12 @@ public class Post {
     private Date p_date;
     @Column
     private String file_uuid;
+
     @Column
+    @JoinColumn(name="m_id", referencedColumnName = "m_id")
     private Long m_id;
     @Column
+    @JoinColumn(name="uid", referencedColumnName = "uid")
     private Long uid;
 
     public Post(String p_name, String p_content, Date p_date,String file_uuid, Long m_id, Long uid) {
