@@ -716,6 +716,18 @@ ul.caption-slides li {
   margin-right: auto;
 }
 
+#backtoList{
+  position: relative;
+  left: 90%;
+  background-color: #FAE8E1;
+  color: inherit;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+}
+
 input[type=text] {
 	background-color: #FAE8E1;
   outline: none;
