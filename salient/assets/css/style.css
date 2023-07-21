@@ -389,6 +389,17 @@ p {
 // =Navbar
 *************************************************************************/
 
+/* 아이콘 크기를 키우는 CSS */
+.navbar-brand {
+  display: block; /* To allow text-align center to work */
+  text-align: center;
+}
+
+.navbar-brand i {
+  font-size: 36px; /* Increase the icon size (adjust as needed) */
+  color: #333; /* Set the icon color */
+}
+
 .navbar-default {
   background: #fff;
   border: none;
@@ -990,7 +1001,7 @@ span.percentfactor {
 /* =Team Section */
 /***********************************************************************************************/
 
-#team-section .title-section {}
+#team-section .title-section {
   margin-bottom: 80px;
 }
 
@@ -1337,6 +1348,23 @@ h6.progress-value {
   padding-bottom: 80px;
 }
 
+/* 글자를 bold로 설정하는 CSS */
+.bold-text {
+  font-weight: bold;
+}
+
+/* 구글 Person 아이콘을 배경으로 설정하는 CSS */
+.person-icon {
+    display: inline-block;
+    font-size: 24px; /* 아이콘의 크기를 조정 (원하는 크기로 변경) */
+    text-decoration: none; /* 링크에 밑줄을 제거하기 위해 text-decoration을 설정 */
+    color: black; /* 링크의 텍스트 색상을 지정 */
+}
+
+.person-icon i {
+    font-size: inherit; /* 아이콘 크기를 부모 요소와 동일하게 설정 */
+}
+
 ul.price-table {
   list-style-type: none;
   padding: 0px;
@@ -1349,6 +1377,14 @@ ul.price-table li {
   padding: 5px 0;
   text-transform: uppercase;
   color: #000;
+}
+
+/* 글씨를 굵게하고 크기를 키우는 CSS */
+.title-my-page {
+  font-weight: bold; /* 글씨를 굵게 설정 */
+  font-size: 24px; /* 글씨 크기를 키움 (원하는 크기로 조정) */
+  text-decoration: none; /* 링크에 밑줄을 제거하기 위해 text-decoration을 설정 */
+  color: #333; /* 글씨 색상을 지정 (원하는 색상으로 변경) */
 }
 
 .title-price {

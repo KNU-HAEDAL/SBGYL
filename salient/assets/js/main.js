@@ -5,6 +5,15 @@
 */
 
 var $ = jQuery.noConflict();
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelector("button").addEventListener("click", function() {
+    document.querySelector(".modal").style.display = "block";
+  });
+
+  document.querySelector(".modal_content").addEventListener("click", function() {
+    document.querySelector(".modal").style.display = "none";
+  });
+});
 
 $(document).ready(function($) {
     "use strict";
