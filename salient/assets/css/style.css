@@ -674,22 +674,64 @@ ul.caption-slides li {
 }
 
 .big-title-sec .big-title {
+  font-family: 'Noto Sans KR', sans-serif;
   font-weight: 300;
   text-transform: none;
-  font-size: 24px;
+  font-size: 40px;
   color: #000;
 }
 
 .big-title-sec .big-subtitle {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   letter-spacing: 1.3px;
   margin-top: 0;
-  margin-bottom: 28px;
-  font-size: 32px;
+  margin-bottom: 15px;
+  font-size: 28px;
   font-weight: 300;
   line-height: 1.45;
   text-transform: none;
   color: #000;
+}
+
+.big-title-sec {
+  margin-top: -7rem;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+
+.big-title-sec hr {
+  border: 1.5 solid #000;
+  margin: 30px auto;
+  width: 80px!important;
+  margin-bottom: 50px;
+}
+
+
+.big-title-sec .mission-name{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  color: #000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type=text] {
+	background-color: #FAE8E1;
+  outline: none;
+  border: 0; 
+  margin-bottom: 30px;
+  margin-top: -10px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 100rem;
+}
+
+button[type=make-mission] {
+  margin-top: 0px;
+  background-color: #E69E79;
+  border-radius: 10px;
 }
 
 .big-title-sec p {
@@ -2008,6 +2050,24 @@ ul.features-list li {
   padding-bottom: 10px;
   font-weight: 500;
   letter-spacing: 1.5px;
+}
+
+#haha p[class=title]{
+  margin-top: -5rem;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  text-transform: none;
+  padding-bottom: 10px;
+  font-size: 40px;
+  color: #000;
+}
+
+#haha hr {
+  border: 1.5 solid #000;
+  margin: 30px auto;
+  width: 80px!important;
+  margin-bottom: 50px;
 }
 
 .offer-post {
