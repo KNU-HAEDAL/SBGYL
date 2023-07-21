@@ -1,5 +1,6 @@
 package com.example.haedal_hackaton.controller;
 
+import com.example.haedal_hackaton.dto.PostResponseDto;
 import com.example.haedal_hackaton.dto.PostSaveRequestDto;
 import com.example.haedal_hackaton.entity.Post;
 import com.example.haedal_hackaton.repository.PostRepository;
@@ -23,6 +24,7 @@ public class PostController {
     // 이 데이터에 결국 Id가 들어있게 된다.
     // 이 데이터를 활용해서 프론트가 link에 id를 포함하게 만들 수 있고
     // 이를 통해서 조회나 다양한 방식이 가능해진다.
+    //인증글 저장
     @PostMapping("/api/mission/{mission-id}/post") // post + url for create
     public Long save(@PathVariable Long m_id,@RequestBody PostSaveRequestDto dto){
         //1. 데이터를 DTO로 받기  (DTO의 필드연결은 프론트가)
@@ -35,8 +37,17 @@ public class PostController {
         return postService.save(dto);
     }
 
-    @GetMapping("/api/mission/{mission_id}/post")
-    public List<Post> allPost(){
-        return postService.findAllPost();
+    //인증글 목록 조회
+    //인증글 전부를 던져주면 됨
+    @GetMapping("/api/mission/{mission-id}/post")
+    public List<Post> findByMissionId(@PathVariable Long mission_id){
+        return postService.findByMissionId(mission_id);
+    }
+
+
+    //인증글 특정 조회, 미완
+    @GetMapping("/api/mission/{mission-id}/post/{post-id}")
+    public PostResponseDto findByPostId(@PathVariable Long missionId,@PathVariable Long postId){
+        return postService.findById(postId);
     }
 }
